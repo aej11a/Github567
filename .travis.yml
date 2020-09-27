@@ -4,4 +4,4 @@ python:
 install:
   - pip install requests
 script:
-  - python -m unittest TestGithub
+  - python -m unittest TestGithubApp
