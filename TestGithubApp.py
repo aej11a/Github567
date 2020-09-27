@@ -11,7 +11,7 @@ class TestGithub(unittest.TestCase):
 
     def testGetCommitsList(self):
         self.assertIsNotNone(getCommitsList("adwqdwqdwqwdsdthtjyj", "test")['message'])
-        commits = getCommitsList("aej11a", "Mars-Weather")
+        commits = getCommitsList("aej11a", "excalidraw")
         self.assertTrue(len(commits) > 0)
         self.assertIsNotNone(commits[0]['sha'])
 

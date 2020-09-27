@@ -13,6 +13,7 @@ def getReposList(username):
 def getCommitsList(username, repoName):
     resp = requests.get('https://api.github.com/repos/' + username + '/' + repoName + '/commits')
     respJson = resp.json()
+    print(respJson)
     return respJson
 
 
@@ -26,4 +27,4 @@ def listReposWithCounts(username):
     return result
 
 
-listReposWithCounts("aej11a")
+#listReposWithCounts("aej11a")
